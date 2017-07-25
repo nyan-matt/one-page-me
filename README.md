@@ -1,4 +1,4 @@
-One Page [Resume Site](http://matthewrea.com) 
+One Page [Resume Site](http://matthewrea.com)
 ---
 
 What's set up here:
@@ -7,6 +7,7 @@ What's set up here:
 - Autoprefixer
 - CSS Minification
 - JSHint
+- Babel
 - Scss Lint (based on [this](https://github.com/causes/scss-lint/blob/master/config/default.yml) config)
 - HTML Minification
 - BrowserSync
