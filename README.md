@@ -13,3 +13,8 @@ What's set up here:
 - BrowserSync
 - Image Minification
 - GH-Pages deployment from dist/ folder
+
+TODO:
+- Cleanup scss file
+- Add more work examples
+- Add work detail pages / modals describing projects
