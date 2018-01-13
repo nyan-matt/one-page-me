@@ -161,7 +161,11 @@ div.skill-fill {
 }
 div.skill-fill a.skill-toggle {
    cursor: s-resize;
+   &.expanded {
+     cursor: n-resize;
+   }
 }
+
 div.skill-fill .more {
   display:none;
   color:#999;
