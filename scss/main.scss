@@ -21,7 +21,7 @@ h1 {
 
 @media screen and (max-width: 420px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -38,6 +38,9 @@ h2 {
   font-size:18px;
   color: #666;
   line-height: 1.5;
+  @media screen and (max-width: 768px){
+    font-size:14px;
+  }
 }
 
 h3,h4 {
@@ -78,10 +81,15 @@ left: -8px;
 border-radius: 10px;
 content: '';
 border: 1px solid  #AAA;
-background: yellow;
+background:#999;
 }
 
-
+.timeline-item {
+  &.latest::after {
+    border: 1px solid  #333;
+    background: yellow;
+  }
+}
 hr { margin:0px;}
 
 canvas {
