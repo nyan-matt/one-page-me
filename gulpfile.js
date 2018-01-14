@@ -54,7 +54,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('deploy', function () {
-    return gulp.src('dist/**/*')
+    return gulp.src('./dist/**/*')
         .pipe(deploy());
 });
 
