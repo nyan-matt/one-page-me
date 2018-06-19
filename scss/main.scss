@@ -26,7 +26,7 @@ h1 {
 }
 
 h1 span {
-  background-color: yellow;
+  background-color:#ffe500;
   display: inline;
   color:#333;
   padding:0 6px;
@@ -87,7 +87,7 @@ background:#999;
 .timeline-item {
   &.latest::after {
     border: 1px solid  #333;
-    background: yellow;
+    background:#ffe500;
   }
 }
 hr { margin:0px;}
@@ -138,18 +138,17 @@ background-attachment: fixed;
 
 }
 .hero-text-wrapper {
-position: absolute;;
+position: relative;
 display:block;
-/* left:50%; */
-margin:0 10px 0 0;
+margin:0 auto;
+max-width:1200px;
 }
 
 .hero-text {
 display:block;
 position: relative;
-/* left:-50%; */
 min-width:340px;
-padding:0 5%;
+padding:0 3%;
 }
 
 div.skill {
@@ -161,7 +160,7 @@ div.skill {
   width: 100%;
 }
 div.skill-fill {
-   background-color:yellow;
+   background-color:#ffe500;
    padding:8px;
    border-right:1px solid #aaa;
    font-family: Consolas, Courier, monospace;
@@ -194,12 +193,14 @@ div.skill-fill .more.visible {
 .card-wrapper .card-inner .card-img {
   height: 150px;
   background-position: 50%;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  transition: border .2s ease-out;
+  transition: all .22s ease-in;  
   border-bottom: 1px solid #ddd;
-
+  &:hover {
+    background-size: 120%;
   }
+}
 .card-wrapper .card-inner .card-title {
     margin-top: 10px;
     font-size: 14px;
@@ -233,3 +234,4 @@ div.skill-fill .more.visible {
 .mono {
   font-family: Consolas, Courier, monospace;
 }
+
