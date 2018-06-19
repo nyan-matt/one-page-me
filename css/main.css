@@ -30,7 +30,7 @@ h1 {
     font-size: 30px; } }
 
 h1 span {
-  background-color: yellow;
+  background-color: #ffe500;
   display: inline;
   color: #333;
   padding: 0 6px; }
@@ -82,7 +82,7 @@ h3, h4 {
 
 .timeline-item.latest::after {
   border: 1px solid  #333;
-  background: yellow; }
+  background: #ffe500; }
 
 hr {
   margin: 0px; }
@@ -126,17 +126,16 @@ div.body {
   background-attachment: fixed; }
 
 .hero-text-wrapper {
-  position: absolute;
+  position: relative;
   display: block;
-  /* left:50%; */
-  margin: 0 10px 0 0; }
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .hero-text {
   display: block;
   position: relative;
-  /* left:-50%; */
   min-width: 340px;
-  padding: 0 5%; }
+  padding: 0 3%; }
 
 div.skill {
   margin-bottom: 10px;
@@ -147,7 +146,7 @@ div.skill {
   width: 100%; }
 
 div.skill-fill {
-  background-color: yellow;
+  background-color: #ffe500;
   padding: 8px;
   border-right: 1px solid #aaa;
   font-family: Consolas, Courier, monospace;
@@ -176,10 +175,12 @@ div.skill-fill .more.visible {
 .card-wrapper .card-inner .card-img {
   height: 150px;
   background-position: 50%;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  transition: border .2s ease-out;
+  transition: all .22s ease-in;
   border-bottom: 1px solid #ddd; }
+  .card-wrapper .card-inner .card-img:hover {
+    background-size: 120%; }
 
 .card-wrapper .card-inner .card-title {
   margin-top: 10px;
