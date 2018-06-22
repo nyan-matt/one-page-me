@@ -30,6 +30,7 @@ h1 span {
   display: inline;
   color:#333;
   padding:0 6px;
+  border-radius:1px;
 }
 
 h2 {
@@ -107,7 +108,6 @@ background-color: #323;
 border-bottom:1px solid #999;
 background-image: url("../img/cartographer.png");
 background-repeat: repeat;
-//background-size: cover;
 background-position: 50% 50%;
 text-align: center;
 padding:10px;
@@ -117,7 +117,7 @@ padding:10px;
   height: 30px;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  // z-index: 100;
   font-size: 20px;
   color:#FFF;
   div.text {
@@ -149,6 +149,11 @@ display:block;
 position: relative;
 min-width:340px;
 padding:0 3%;
+}
+
+.body-content {
+  position:relative; 
+  background:#FFF;
 }
 
 div.skill {
@@ -188,7 +193,7 @@ div.skill-fill .more.visible {
   padding: 0;
   height: 230px;
   background-color: #fdfdfd;
-  border-radius: 2px;
+  border-radius: 6px;
 }
 .card-wrapper .card-inner .card-img {
   height: 150px;
@@ -197,6 +202,8 @@ div.skill-fill .more.visible {
   background-repeat: no-repeat;
   transition: all .22s ease-in;  
   border-bottom: 1px solid #ddd;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   &:hover {
     background-size: 120%;
   }
