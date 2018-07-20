@@ -82,7 +82,7 @@ gulp.task('minify-html', function() {
       spare:true
     };
 
-  gulp.src('./*.html')
+  gulp.src('src/**/*.html')
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('dist/'))
     .pipe(reload({stream:true}));
@@ -97,7 +97,7 @@ gulp.task('minify-html', function() {
 gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch('js/*.js', ['js']);
-  gulp.watch('./*.html', ['minify-html']);
+  gulp.watch('src/**/*.html', ['minify-html']);
   gulp.watch('img/*', ['imgmin']);
 });
 

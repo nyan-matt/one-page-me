@@ -1,4 +1,3 @@
-
 new WOW().init();
 
 window.onscroll = function(event){
