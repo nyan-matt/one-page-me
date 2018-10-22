@@ -91,6 +91,13 @@ hr {
 canvas {
   display: block; }
 
+.hdr-link {
+  float: right;
+  font-size: 14px;
+  font-family: Consolas, Courier, monospace;
+  top: 10px;
+  position: relative; }
+
 /* ---- particles.js container ---- */
 #header-bg {
   position: relative;
