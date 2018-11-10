@@ -6,12 +6,5 @@ window.onscroll = function(event){
   heroText.style.top = (topHeight - document.body.scrollTop * 1.25) + 'px';
 };
 
-let skillToggle = document.getElementsByClassName('skill-toggle');
 
-Array.from(skillToggle).map((element) => {
-  element.addEventListener('click', (event) => {
-    event.target.nextElementSibling.classList.toggle('visible');
-    event.target.classList.toggle('expanded');
-  })
 
-})
